@@ -13,7 +13,9 @@ function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border-4 border-teal/30 shadow-xl">
+              <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-teal/20 dark:bg-teal/30 rounded-2xl" />
+              <div className="absolute -top-3 -left-3 w-16 h-16 bg-gold/20 dark:bg-gold/30 rounded-xl" />
+              <div className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border-4 border-teal/30 shadow-xl">
                 <img
                   src="/avatar.jpg"
                   alt="Foto de perfil de Isaque Johnson"
@@ -21,8 +23,6 @@ function AboutSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-teal/10 dark:bg-teal/20 rounded-2xl -z-10" />
-              <div className="absolute -top-3 -left-3 w-16 h-16 bg-gold/10 dark:bg-gold/20 rounded-xl -z-10" />
             </div>
           </div>
 

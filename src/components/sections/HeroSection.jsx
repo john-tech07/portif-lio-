@@ -21,7 +21,7 @@ function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col items-center justify-center bg-navy dark:bg-navy text-white px-4 sm:px-6"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-navy dark:bg-navy text-white px-4 sm:px-6"
     >
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-gold font-mono text-sm tracking-widest mb-4 animate-fade-in">
@@ -43,10 +43,11 @@ function HeroSection() {
           Desenvolvedor Frontend com 1 ano de experiência prática, construindo interfaces modernas e responsivas com React, Tailwind CSS e Shadcn/UI.
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10 animate-fade-in">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10 animate-fade-in w-full sm:w-auto">
           <Button
             variant="primary"
             size="lg"
+            className="w-full sm:w-auto"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Ver projetos
@@ -56,7 +57,7 @@ function HeroSection() {
           <a
             href="/cv.pdf"
             download="Curriculo-Isaque-Johnson.pdf"
-            className="inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors min-h-[44px] px-7 py-3 text-base border border-white/40 text-white hover:bg-white/10"
+            className="inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors min-h-[44px] px-7 py-3 text-base border border-white/40 text-white hover:bg-white/10 w-full sm:w-auto"
           >
             <FileDown size={18} />
             Baixar CV
